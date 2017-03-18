@@ -1,0 +1,41 @@
+<head>
+  <title>50minutes</title>
+</head>
+
+<body>
+  {{> tasks}}
+</body>
+
+<template name="tasks">
+  {{> loginButtons}}
+
+  <h1>Add Tasks!</h1>
+  
+  <!-- Form para salvar no banco -->
+  <!-- joaovitorlessa@gmail.com, teste123 -->
+  {{#if currentUser}}
+  <form class="add-task">
+    <label>Task Name: </label>
+    <input type="text" name="name" placeholder="Add Task" /> 
+    <input type="submit" value="Submit" />
+  </form>
+  {{else}}
+    <p>Please, log in to add tasks</p>
+  {{/if}}
+  
+  <hr />
+  
+  <h3>Tasks</h3>
+  
+  <!-- Listagem -->
+  <!-- # Normalmente usado para each -->
+  <!-- Listagens normalmente são usados os helpers-->
+  <ul>
+    {{#each tasks}}
+      <li>
+        {{name}} {{#if currentUser}}<a class="delete-task" href="#">X</a>{{/if}} 
+      </li>
+    {{/each}}
+  </ul>
+
+</template> 

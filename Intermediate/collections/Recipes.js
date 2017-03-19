@@ -27,6 +27,9 @@ RecipeSchema = new SimpleSchema({
 		label: "Created At",
 		autoValue: function(){
 			return new Date()
+		},
+		autoform: {
+			type: "hidden"
 		}
 	}
 });

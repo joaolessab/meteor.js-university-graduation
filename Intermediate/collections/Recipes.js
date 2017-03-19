@@ -16,6 +16,10 @@ RecipeSchema = new SimpleSchema({
 		label: "Author",
 		autoValue: function(){
 			return this.userId
+		},
+		//Esse autoform hidden faz com que esse campo esteja escondido no autoForm
+		autoform: {
+			type: "hidden"
 		}
 	},
 	createdAt:{

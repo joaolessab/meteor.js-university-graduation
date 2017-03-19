@@ -5,10 +5,11 @@ FlowRouter.route('/', {
 	}
 });
 
-FlowRouter.route('/test', {
-	name: 'test',
+FlowRouter.route('/recipe-book', {
+	name: 'recipe-book',
 	action(){
 		//main é a área principal do MainLayout referenciando o template de Test
-		BlazeLayout.render('MainLayout', {main: 'Test'});
+		BlazeLayout.render('MainLayout', {main: 'Recipes'});
 	}
 });
+

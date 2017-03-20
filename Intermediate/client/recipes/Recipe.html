@@ -1,6 +1,7 @@
 <!-- Single Recipe ou Recipe Individual -->
 <template name="Recipe">
-	<article class="recipe">
+	<!-- Se a condição abaixo for verdadeira, ele adiciona classe in-menu -->
+	<article class="recipe {{#if inMenu}}in-menu{{/if}}">
 		<h3>{{name}}</h3>
 		<p>{{desc}}</p>
 		<p>

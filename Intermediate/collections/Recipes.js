@@ -1,4 +1,4 @@
-//Criando a Collection
+	//Criando a Collection
 Recipes = new Mongo.Collection('recipes');
 
 //Dando autorização para inserção
@@ -76,6 +76,9 @@ Meteor.methods({
 				inMenu: !currentState
 			}
 		})
+	},
+	deleteRecipe: function(id){
+		Recipes.remove(id);
 	}
 });
 

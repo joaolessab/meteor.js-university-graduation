@@ -3,19 +3,24 @@
 	<!-- Se a condição abaixo for verdadeira, ele adiciona classe in-menu -->
 	<article class="recipe {{#if inMenu}}in-menu{{/if}}">
 		<h3>{{name}}</h3>
-		<p>{{desc}}</p>
-		<p>
+		<!-- Fazendo com que o form de edição só apareça quando esteja em modo de edição -->
+		{{# if $.Session.get 'editMode'}}
+			{{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
+		{{else}}
+			<p>{{desc}}</p>
+			<p>
 			{{#each ingredients}}
 				<span class="ingredient">{{name}} - {{amount}}</span>
 			{{/each}}
-		</p>
+			</p>
 		<a href="/recipe/{{_id}}">View Details</a>
 		{{#if inMenu}}
 			<button class="btn-deny toogle-menu">Remove from Menu</button>
 		{{else}}
 			<button class="btn-primary toogle-menu">Add to Menu</button>
 		{{/if}}
-
-		{{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
+		{{/if}}		
+		<i class="fa fa-pencil"></i>
+		<i class="fa fa-trash"></i>	
 	</article>
 </template>

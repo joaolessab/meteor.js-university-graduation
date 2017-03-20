@@ -1,10 +1,7 @@
 <template name="MainLayout">
-	<header>
-		<h1>My Recipe Book</h1>
-		<!-- Template com os botões de Login -->
-		{{> loginButtons}}
-	</header>
-	<main>
+	{{> Header}}
+	{{> SideNav}}
+	<main class="main-layout">
 		<!-- Principal área do site - Vai ser dinâmico de acordo com o Router -->
 		<!-- Esse campo template é muito importante no router.js -->
 		{{> Template.dynamic template=main}}

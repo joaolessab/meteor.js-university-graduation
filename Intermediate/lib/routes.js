@@ -1,6 +1,8 @@
 FlowRouter.route('/', {
 	name: 'home',
 	action(){
+		// Se você quiser adicionar Google Analytics
+		// GAnalytics.pageview();
 		BlazeLayout.render('HomeLayout');
 	}
 });
@@ -8,8 +10,9 @@ FlowRouter.route('/', {
 FlowRouter.route('/recipe-book', {
 	name: 'recipe-book',
 	action(){
+		// Se você quiser adicionar Google Analytics
+		// GAnalytics.pageview();
 		//main é a área principal do MainLayout referenciando o template de Test
 		BlazeLayout.render('MainLayout', {main: 'Recipes'});
 	}
 });
-

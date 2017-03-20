@@ -1,3 +1,14 @@
+//Para o Login e para o Logout
+if (Meteor.isClient){
+	Accounts.onLogin(function(){
+		FlowRouter.go('recipe-book');	
+	});
+
+	Accounts.onLogout(function(){
+		FlowRouter.go('home');	
+	});
+}
+
 //Caso o usuário não esteja logado, ele vai direto para a página HOME
 FlowRouter.triggers.enter([function(context, redirect){
 	if(!Meteor.userId()){

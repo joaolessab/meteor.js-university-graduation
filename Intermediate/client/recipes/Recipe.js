@@ -4,3 +4,9 @@ Template.Recipe.events({
 		Meteor.call('toogleMenuItem', this._id, this.inMenu);
 	}
 });
+
+Template.Recipe.helpers({
+	updateRecipeId: function() {
+		return this._id;
+	}
+});

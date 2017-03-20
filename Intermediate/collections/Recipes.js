@@ -6,6 +6,9 @@ Recipes.allow({
 	insert: function(userId, doc){
 		// Se userId existir, então você está logado, então você pode inserir um recipe
 		return !!userId;
+	},
+	update: function(userId, doc){
+		return !!userId;
 	}
 });
 
@@ -62,6 +65,17 @@ RecipeSchema = new SimpleSchema({
 		autoform: {
 			type: "hidden"
 		}
+	}
+});
+
+//Métodos da Collection Recipes
+Meteor.methods({
+	toogleMenuItem: function(id, currentState){
+		Recipes.update(id, {
+			$set: {
+				inMenu: !currentState
+			}
+		})
 	}
 });
 

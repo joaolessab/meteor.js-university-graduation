@@ -24,3 +24,8 @@ fourseven:scss
 fortawesome:fontawesome
 standard-minifier-css
 standard-minifier-js
+
+accounts-base
+accounts-password
+useraccounts:unstyled
+raix:handlebar-helpers

@@ -1,3 +1,18 @@
+/* Título de Formulários */
+AccountsTemplates.configure({
+    texts: {
+      title: {
+        changePwd: "Password Title",
+        enrollAccount: "Enroll Title",
+        forgotPwd: "Forgot Pwd Title",
+        resetPwd: "Reset Pwd Title",
+        signIn: "Faça o seu Login",
+        signUp: "Crie uma conta",
+        verifyEmail: "Verify Email Title",
+      }
+    }
+});
+
 /* Configurações básicas */
 AccountsTemplates.addFields([
 	{

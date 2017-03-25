@@ -5,8 +5,8 @@ AccountsTemplates.configure({
         changePwd: "Password Title",
         enrollAccount: "Enroll Title",
         forgotPwd: "Forgot Pwd Title",
-        captchaVerification: "Captcha verification failed!",
-        pwdMismatch: "error.pwdsDontMatch",
+        /*captchaVerification: "Captcha verification failed!",
+        pwdMismatch: "error.pwdsDontMatch",*/
         resetPwd: "Reset Pwd Title",
         signIn: "Faça o seu Login",
         signUp: "Crie uma conta",

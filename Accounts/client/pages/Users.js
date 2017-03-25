@@ -36,6 +36,7 @@ Template.Users.events({
 	},
 	'click .toggle-admin': function(){
 		//Chamando o server side Method toogleAdmin e passando o id do usuário atual
+		//Meteor.call('toggleAdmin', this._id);
 		Meteor.call('toggleAdmin', this._id);
 	}
 });

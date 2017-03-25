@@ -2,7 +2,8 @@
 	{{#if isInRole 'admin'}}
     <h1 class="page-title">Users</h1>
 
-    <table>
+    <!-- Temos um helper aqui -->
+    <table class="{{editMode}}">
     	<tr>
     		<th>Id</th>
     		<th>Email</th>
@@ -18,7 +19,10 @@
     		<td>{{dateFormat}}</td>
     		<td>
                 {{isAdmin}}
+                <!-- Chamando o helper currentEdit -->
+                {{#if currentEdit}}
                 <div class="user-edit">
+                    <i class="fa fa-close close-edit-mode"></i>
                     <h3>Edit user</h3>
                     {{#if isAdmin}}
                     <button class="toggle-admin">Remove admin</button>
@@ -26,6 +30,7 @@
                     <button class="toggle-admin">Make admin</button>
                     {{/if}}
                 </div>
+                {{/if}}
             </td>
     	</tr>
     {{/each}}

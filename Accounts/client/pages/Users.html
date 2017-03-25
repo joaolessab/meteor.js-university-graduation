@@ -12,11 +12,21 @@
     	</tr>
     {{#each users}}
     	<tr>
-    		<td>{{_id}}</td>
+    		<td class="user_id">{{_id}}</td>
     		<td>{{userEmail}}</td>
     		<td>{{profile.firstName}}</td>
-    		<td>{{createdAt}}</td>
-    		<td>{{isAdmin}}</td> 
+    		<td>{{dateFormat}}</td>
+    		<td>
+                {{isAdmin}}
+                <div class="user-edit">
+                    <h3>Edit user</h3>
+                    {{#if isAdmin}}
+                    <button class="toggle-admin">Remove admin</button>
+                    {{else}}
+                    <button class="toggle-admin">Make admin</button>
+                    {{/if}}
+                </div>
+            </td>
     	</tr>
     {{/each}}
     </table>

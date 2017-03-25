@@ -30,5 +30,6 @@ accounts-password
 useraccounts:unstyled
 raix:handlebar-helpers
 aldeed:template-extension
+alanning:roles
 
 check

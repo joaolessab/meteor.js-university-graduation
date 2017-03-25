@@ -1,7 +1,9 @@
 var postSignUp = function(userId, info){
-	/* Voltando no console */
+	/* Voltando no server */
 	console.log(userId);
-	console.log(info);
+	console.log(info.profile.profession);
+	/* Adicionando a Role */
+	Roles.addUsersToRoles(userId, ['normal-user', info.profile.profession]);
 }
 
 AccountsTemplates.configure({

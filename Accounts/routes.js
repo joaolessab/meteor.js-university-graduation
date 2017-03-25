@@ -13,3 +13,18 @@ FlowRouter.route('/dashboard', {
         BlazeLayout.render("AppLayout", {main: "Dashboard"});
     }
 });
+
+
+// GROUP ROUTER
+var adminRoutes = FlowRouter.group({
+	prefix: '/admin',
+	name: 'admin'
+});
+
+// Users Route
+adminRoutes.route('/users', {
+	name: 'users',
+	action(){
+		BlazeLayout.render("AppLayout", {main: "Users"});
+	}
+});

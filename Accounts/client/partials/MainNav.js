@@ -4,6 +4,8 @@ Template.MainNav.events({
 	},
 
 	'click .logout': () =>{
-		Meteor.logout();
+		//Meteor.logout();
+		/* Chamando a função que está definida dentro de onLogoutHook */
+		AccountsTemplates.logout();
 	}
 });

@@ -1,3 +1,12 @@
+var myLogoutFunc = function(){
+	/* Redirecionando */
+	FlowRouter.go('/');
+
+	/* Resetando uma variável zoada */
+	Session.set('nav-toggle', '');
+}
+
+
 /* Título de Formulários */
 AccountsTemplates.configure({
     texts: {
@@ -12,7 +21,11 @@ AccountsTemplates.configure({
         signUp: "Crie uma conta",
         verifyEmail: "Verify Email Title",
       }
-    }
+    }, 
+    confirmPassword: false,
+    termsUrl: 'terms-of-use',
+    privacyUrl: 'privacy',
+    onLogoutHook: myLogoutFunc
 });
 
 /* Configurações básicas */

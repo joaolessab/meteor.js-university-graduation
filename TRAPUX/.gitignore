@@ -1,1 +1,6 @@
-node_modules/
+.DS_Store
+client/accounts
+client/accounts/*
+
+settings.json
+mup.json

@@ -1,11 +1,14 @@
 {
-  "name": "Trapux",
-  "private": true,
+  "name": "accounts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
   "scripts": {
-    "start": "meteor run"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.20.0",
-    "meteor-node-stubs": "~0.2.4"
+    "moment": "^2.18.1"
   }
 }

@@ -26,10 +26,21 @@ standard-minifier-css
 standard-minifier-js
 
 accounts-base
-accounts-password
 useraccounts:unstyled
 raix:handlebar-helpers
 aldeed:template-extension
 alanning:roles
+erasaur:meteor-lodash
+stolinski:stylus-multi
+spiderable
+fastclick
+aldeed:collection2
+aldeed:autoform
+accounts-ui
+accounts-password
+matb33:bootstrap-glyphicons
+zimme:active-route
+gwendall:auth-client-callbacks
+datariot:ganalytics
 
 check

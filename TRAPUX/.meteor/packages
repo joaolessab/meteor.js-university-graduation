@@ -16,9 +16,23 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 
-meteortoys:allthings
 kadira:flow-router
 kadira:blaze-layout
+
+erasaur:meteor-lodash
+stolinski:stylus-multi
+spiderable
+fastclick
+aldeed:collection2
+
+#Deve ficar comentado por enquanto - aldeed:autoform
+
+accounts-ui
+matb33:bootstrap-glyphicons
+zimme:active-route
+gwendall:auth-client-callbacks
+meteortoys:allthings
+datariot:ganalytics
 
 fourseven:scss
 fortawesome:fontawesome
@@ -26,21 +40,10 @@ standard-minifier-css
 standard-minifier-js
 
 accounts-base
+accounts-password
 useraccounts:unstyled
 raix:handlebar-helpers
 aldeed:template-extension
 alanning:roles
-erasaur:meteor-lodash
-stolinski:stylus-multi
-spiderable
-fastclick
-aldeed:collection2
-aldeed:autoform
-accounts-ui
-accounts-password
-matb33:bootstrap-glyphicons
-zimme:active-route
-gwendall:auth-client-callbacks
-datariot:ganalytics
 
 check

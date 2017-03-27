@@ -1,5 +1,6 @@
 <template name="MyDashboard">
     <h1 class="page-title">Dashboard</h1>
-    {{kindaOfUser}}
-    {{kindaOfUser.profile.profession}}
-</template>
+    {{#each users}}
+    	{{profile.profession}}
+    {{/each}}
+    </template>

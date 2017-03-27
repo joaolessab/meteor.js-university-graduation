@@ -1,4 +1,4 @@
-// Home Page
+// ESTA É A HOMEPAGE DO MEU WEBSITE
 FlowRouter.route('/', {
     name: 'home',
     action() {
@@ -6,7 +6,7 @@ FlowRouter.route('/', {
     }
 });
 
-// Home Page
+// PÁGINA DO DASHBOARD
 FlowRouter.route('/dashboard', {
     name: 'dashboard',
     action() {
@@ -15,7 +15,7 @@ FlowRouter.route('/dashboard', {
 });
 
 
-// GROUP ROUTER
+// GROUP ROUTER PARA O USER
 var adminRoutes = FlowRouter.group({
 	prefix: '/admin',
 	name: 'admin'

@@ -15,7 +15,11 @@ AccountsTemplates.configure({
       title: {
         signIn: "Faça o seu Login",
         signUp: "Crie uma conta"
-      }
+      },
+      signUpLink_pre: "Não possui uma conta?",
+      signUpLink_link: "(Crie uma)",
+      signInLink_pre: "Já possui uma conta?", 
+      signInLink_link: "(Entrar)"
     }, 
     confirmPassword: false,
     onLogoutHook: myLogoutFunc
@@ -33,6 +37,22 @@ AccountsTemplates.addFields([
       placeholder: "Digite o nome de usuário",
       required: true,
       minLength: 5,
+  },
+  {
+      _id: 'email',
+      type: 'email',
+      required: true,
+      displayName: "E-mail: ",
+      re: /.+@(.+){2,}\.(.+){2,}/,
+      errStr: 'E-mail inválido',
+  },
+  //COM ESSE CAMPO, USUÁRIO PODE ENTRAR COM USERNAME OU COM E-MAIL
+  {
+      _id: 'username_and_email',
+      type: 'text',
+      required: true,
+      displayName: 'Login / E-mail: ',
+      placeholder: 'Digite seu login ou seu e-mail'
   },
   {
       _id: 'password',

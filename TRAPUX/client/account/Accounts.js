@@ -1,3 +1,5 @@
+//ARQUIVO INDEPENDENTE DE HTML, IRÁ CONFIGURAR APENAS O FORMULÁRIO
+
 var myLogoutFunc = function(){
 	/* Redirecionando */
 	FlowRouter.go('/');
@@ -11,29 +13,43 @@ var myLogoutFunc = function(){
 AccountsTemplates.configure({
     texts: {
       title: {
-        changePwd: "Password Title",
-        enrollAccount: "Enroll Title",
-        forgotPwd: "Forgot Pwd Title",
-        /*captchaVerification: "Captcha verification failed!",
-        pwdMismatch: "error.pwdsDontMatch",*/
-        resetPwd: "Reset Pwd Title",
         signIn: "Faça o seu Login",
-        signUp: "Crie uma conta",
-        verifyEmail: "Verify Email Title",
+        signUp: "Crie uma conta"
       }
     }, 
     confirmPassword: false,
-    termsUrl: 'terms-of-use',
-    privacyUrl: 'privacy',
     onLogoutHook: myLogoutFunc
 });
 
-/* Configurações básicas */
+
+AccountsTemplates.removeField('password');
+AccountsTemplates.removeField('email');
+/*ADICIONANDO CAMPOS DE LOGIN / CRIAÇÃO*/
+AccountsTemplates.addFields([
+  {
+      _id: "username",
+      type: "text",
+      displayName: "Nome de Usário: ",
+      placeholder: "Digite o nome de usuário",
+      required: true,
+      minLength: 5,
+  },
+  {
+      _id: 'password',
+      type: 'password',
+      required: true,
+      displayName: 'Senha: ',
+      placeholder: 'Digite a sua senha'
+  }
+]);
+
+/*ADICIONANDO CAMPOS DE REGISTRO*/
 AccountsTemplates.addFields([
 	{
 		_id: 'firstName',
 		type: 'text',
-		displayName: 'First Name', 
+		displayName: 'Nome Completo: ',
+		placeholder: 'Digite seu nome',
 		required: true,
 		/* Regex validation */
 		re: /(?=.*[a-z])(?=.*[A-Z])/, 
@@ -42,18 +58,19 @@ AccountsTemplates.addFields([
 	{
 		_id: 'profession',
 		type: 'select',
+		displayName: 'Tipo de Usuário: ',
 		select: [
 			{
-				text: 'Developer',
-				value: 'developer'
+				text: 'Gestor de Operações',
+				value: 'gestor'
 			},
 			{
-				text: 'Designer',
-				value: 'designer'
+				text: 'Analista / Desenvolvedor',
+				value: 'adesenvolvedor'
 			},
 			{
-				text: 'Other',
-				value: 'other'
+				text: 'Cliente',
+				value: 'cliente'
 			}
 		]
 	}

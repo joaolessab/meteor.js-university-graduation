@@ -18,6 +18,15 @@ FlowRouter.route('/', {
     }
 });
 
+//PÁGINA DO MEU NOVO DASHBOARD
+FlowRouter.route('/mydash', {
+    name: 'mydash',
+    action(){
+        BlazeLayout.render("SystemLayout", {main: "MyDashboard"});
+    }
+});
+
+
 // PÁGINA DO DASHBOARD
 FlowRouter.route('/dashboard', {
     name: 'dashboard',

@@ -1,15 +1,4 @@
-//ARQUIVO INDEPENDENTE DE HTML, IRÁ CONFIGURAR APENAS O FORMULÁRIO
-
-var myLogoutFunc = function(){
-	/* Redirecionando */
-	FlowRouter.go('/');
-
-	/* Resetando uma variável zoada */
-	Session.set('nav-toggle', '');
-}
-
-
-/* Título de Formulários */
+// TÍTULOS DE FORMULÁRIOS
 AccountsTemplates.configure({
     texts: {
       title: {
@@ -21,14 +10,15 @@ AccountsTemplates.configure({
       signInLink_pre: "Já possui uma conta?", 
       signInLink_link: "(Entrar)"
     }, 
-    confirmPassword: false,
-    onLogoutHook: myLogoutFunc
+    confirmPassword: false
 });
 
 
+// ADICIONANDO E REMOVENDO CAMPOS DE USUÁRIOS
 AccountsTemplates.removeField('password');
 AccountsTemplates.removeField('email');
-/*ADICIONANDO CAMPOS DE LOGIN / CRIAÇÃO*/
+
+//ADICIONANDO CAMPOS DE LOGIN / CRIAÇÃO
 AccountsTemplates.addFields([
   {
       _id: "username",
@@ -63,7 +53,7 @@ AccountsTemplates.addFields([
   }
 ]);
 
-/*ADICIONANDO CAMPOS DE REGISTRO*/
+//ADICIONANDO CAMPOS DE REGISTRO
 AccountsTemplates.addFields([
 	{
 		_id: 'firstName',

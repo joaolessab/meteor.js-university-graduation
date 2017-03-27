@@ -1,3 +1,15 @@
+//LOGIN E LOGOUT
+if (Meteor.isClient){
+    Accounts.onLogin(function(){
+        FlowRouter.go('dashboard');   
+    });
+
+    Accounts.onLogout(function(){
+        FlowRouter.go('home');  
+    });
+}
+///////////////////////////////////////////
+
 // ESTA É A HOMEPAGE DO MEU WEBSITE
 FlowRouter.route('/', {
     name: 'home',
@@ -14,7 +26,7 @@ FlowRouter.route('/dashboard', {
     }
 });
 
-
+///////////////////////////////////////////
 // GROUP ROUTER PARA O USER
 var adminRoutes = FlowRouter.group({
 	prefix: '/admin',

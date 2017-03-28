@@ -1,6 +1,6 @@
 <template name="MyDashboard">
-    <h1 class="page-title">Dashboard</h1>
     {{#each users}}
+    <h1 class="page-title">Bem Vindo, {{profile.firstName}}</h1>
     	{{#if profile.profession}}
     		{{> UserDashboard}}
     	{{/if}}

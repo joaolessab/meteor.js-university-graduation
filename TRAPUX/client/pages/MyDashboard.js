@@ -6,7 +6,7 @@ Template.MyDashboard.helpers({
 		return Meteor.users.find({_id: Meteor.userId()});
 	},
 	teste: function(){
-		return 'Essetemplate';
+		return 'UserDashboard';
 	}
 });
 

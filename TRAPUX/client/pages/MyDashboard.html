@@ -1,9 +1,8 @@
 <template name="MyDashboard">
     {{#each users}}
     <h1 class="page-title">Bem Vindo, {{profile.firstName}}</h1>
-    	<!--{{#if clientOccupation}}
+    	{{#if checkOccupation profile.profession }}
     		{{> UserDashboard}}
-    	{{/if}}-->
-    	{{> UserDashboard}}
+    	{{/if}}
     {{/each}}
 </template>

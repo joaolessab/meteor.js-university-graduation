@@ -5,8 +5,8 @@ Template.MyDashboard.helpers({
 	users: function(){
 		return Meteor.users.find({_id: Meteor.userId()});
 	},
-	clientOccupation: function(){
-	
+	checkOccupation: function(a){
+		return a === 'cliente';
 	}
 });
 

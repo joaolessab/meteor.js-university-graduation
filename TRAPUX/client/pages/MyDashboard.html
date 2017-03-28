@@ -1,7 +1,8 @@
 <template name="MyDashboard">
     <h1 class="page-title">Dashboard</h1>
     {{#each users}}
-    	{{profile.profession}}
-    	{{> Essetemplate}}
+    	{{#if profile.profession}}
+    		{{> Essetemplate}}
+    	{{/if}}
     {{/each}}
 </template>

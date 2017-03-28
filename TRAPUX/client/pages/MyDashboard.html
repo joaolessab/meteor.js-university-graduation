@@ -2,13 +2,15 @@
     {{#each users}}
     <h1 class="page-title">Bem Vindo, {{profile.firstName}}</h1>
     	
-    	{{#if checkCliente profile.profession }}
+    	{{#if checkCliente profile.profession}}
     		{{> ClienteDashboard}}
-    	{{/if}}
-
-    	{{#if checkGestor profile.profession }}
+    	
+    	{{else}} {{#if checkGestor profile.profession}}
     		{{> GestorDashboard}}
-    	{{/if}}
+
+    	{{else}} {{#if checkDev profile.profession}}
+    		{{> DevDashboard}}
+    	{{/if}}{{/if}}{{/if}}
 
     {{/each}}
 </template>

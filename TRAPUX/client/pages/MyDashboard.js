@@ -10,6 +10,9 @@ Template.MyDashboard.helpers({
 	},
 	checkGestor: function(a){
 		return a === 'gestor';
+	},
+	checkDev: function(a){
+		return a === 'adesenvolvedor';
 	}
 });
 

@@ -1,9 +1,9 @@
-Template.MainNav.events({
+Template.Header.events({
 	'click .login-toggle': ()=> {
 		Session.set('nav-toggle', 'open');
 	},
 
-	'click .logout': () =>{
+	'click #logout': () => {
 		//Meteor.logout();
 		/* Chamando a função que está definida dentro de onLogoutHook */
 		AccountsTemplates.logout();

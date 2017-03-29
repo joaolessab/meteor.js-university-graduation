@@ -25,27 +25,3 @@ FlowRouter.route('/mydash', {
         BlazeLayout.render("SystemLayout", {main: "MyDashboard"});
     }
 });
-
-
- // PÁGINA DO DASHBOARD
- FlowRouter.route('/dashboard', {
-     name: 'dashboard',
-     action() {
-         BlazeLayout.render("AppLayout", {main: "Dashboard"});
-     }
- });
- 
- ///////////////////////////////////////////
- // GROUP ROUTER PARA O USER
- var adminRoutes = FlowRouter.group({
-   prefix: '/admin',
-   name: 'admin'
- });
- 
- // Users Route
- adminRoutes.route('/users', {
-   name: 'users',
-   action(){
-       BlazeLayout.render("AppLayout", {main: "Users"});
-    }
-}); 

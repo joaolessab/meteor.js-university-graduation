@@ -11,7 +11,7 @@ html {
 
 body {
     color: $text;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Montserrat;
     margin: 0px;
 }
 
@@ -66,4 +66,8 @@ header h1{color: white;}
     background-color: $dblue;
     color: white;
     height: 75px;
+    border-left: 15px solid #66b5e6;
+}
+.at-title h3{
+    padding-top: 25px;
 }

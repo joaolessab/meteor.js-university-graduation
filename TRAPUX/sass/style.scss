@@ -67,7 +67,7 @@ header h1{color: white;}
     background-color: $dblue;
     color: white;
     height: 75px;
-    border-left: 15px solid #66b5e6;
+    border-left: 15px solid #5383FF;
 }
 .at-title h3{
     padding-top: 25px;
@@ -75,9 +75,9 @@ header h1{color: white;}
 .submitBtn{
     height: 40px;
     border: 0px;
-    width: 200px;
-    border-radius: 15px;
-    background-color: #66b5e6;
+    width: 215px;
+    border-radius: 30px;
+    background-color: #5383FF;
     color: white;
     font-weight: bold;
     padding-left: 40px;
@@ -100,14 +100,26 @@ header h1{color: white;}
     width: 60%;
 }
 
+#login-form select{
+    width: 60%;
+    background-color: transparent;
+    height: 50px;
+    border: 0px;
+}
+
 .at-pwd-form{
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
 .at-signup-link{
-    background-color: #eaeaea;
+    background-color: rgba(197, 197, 197, 0.23);
     padding-top: 12px;
     padding-bottom: 1px;
     font-size: 11px;
+}
+
+.at-error{
+    margin-top: 20px;
+    color: #ce4545;
 }

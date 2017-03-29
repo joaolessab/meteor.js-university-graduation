@@ -23,8 +23,8 @@ AccountsTemplates.addFields([
   {
       _id: "username",
       type: "text",
-      displayName: "Nome de Usário: ",
-      placeholder: "Digite o nome de usuário",
+      displayName: " ",
+      placeholder: "Username",
       required: true,
       minLength: 5,
   },
@@ -32,7 +32,8 @@ AccountsTemplates.addFields([
       _id: 'email',
       type: 'email',
       required: true,
-      displayName: "E-mail: ",
+      displayName: " ",
+      placeholder: "E-mail",
       re: /.+@(.+){2,}\.(.+){2,}/,
       errStr: 'E-mail inválido',
   },
@@ -58,8 +59,8 @@ AccountsTemplates.addFields([
 	{
 		_id: 'firstName',
 		type: 'text',
-		displayName: 'Nome Completo: ',
-		placeholder: 'Digite seu nome',
+		displayName: ' ',
+		placeholder: 'Nome completo',
 		required: true,
 		/* Regex validation */
 		re: /(?=.*[a-z])(?=.*[A-Z])/, 
@@ -68,7 +69,7 @@ AccountsTemplates.addFields([
 	{
 		_id: 'profession',
 		type: 'select',
-		displayName: 'Tipo de Usuário: ',
+		displayName: ' ',
 		select: [
 			{
 				text: 'Gestor de Operações',

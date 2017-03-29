@@ -5,6 +5,12 @@ AccountsTemplates.configure({
         signIn: "Faça o seu Login",
         signUp: "Crie uma conta"
       },
+
+      errors: {
+            loginForbidden: "Login e senha incorretos",
+            pwdMismatch: "Login e senha incorretos"
+      },
+
       signUpLink_pre: "Não possui uma conta?",
       signUpLink_link: "(Crie uma)",
       signInLink_pre: "Já possui uma conta?", 

@@ -57,7 +57,7 @@ header h1{color: white;}
     width: 70%;
     max-width: 700px;
     background-color: white;
-    box-shadow: 8px 10px 5px #e2e2e2;
+    box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     min-height: 300px;
     height: auto;
@@ -71,4 +71,43 @@ header h1{color: white;}
 }
 .at-title h3{
     padding-top: 25px;
+}
+.submitBtn{
+    height: 40px;
+    border: 0px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #66b5e6;
+    color: white;
+    font-weight: bold;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+.submitBtn:hover{
+    background-color: $dblue;
+}
+
+.submitBtn i{
+    margin-right: 20px;
+    float: right;
+}
+
+#login-form input{
+    line-height: normal;
+    height: 50px;
+    border: 0px solid;
+    border-bottom: 1px solid #d0d0d0;
+    width: 60%;
+}
+
+.at-pwd-form{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.at-signup-link{
+    background-color: #eaeaea;
+    padding-top: 12px;
+    padding-bottom: 1px;
+    font-size: 11px;
 }

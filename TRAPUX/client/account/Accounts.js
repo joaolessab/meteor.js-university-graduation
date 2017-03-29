@@ -41,15 +41,15 @@ AccountsTemplates.addFields([
       _id: 'username_and_email',
       type: 'text',
       required: true,
-      displayName: 'Username / E-mail: ',
-      placeholder: 'Digite seu login ou seu e-mail'
+      displayName: ' ',
+      placeholder: 'Username ou e-mail'
   },
   {
       _id: 'password',
       type: 'password',
       required: true,
-      displayName: 'Senha: ',
-      placeholder: 'Digite a sua senha'
+      displayName: ' ',
+      placeholder: 'Senha'
   }
 ]);
 

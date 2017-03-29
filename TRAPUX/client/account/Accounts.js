@@ -41,7 +41,7 @@ AccountsTemplates.addFields([
       _id: 'username_and_email',
       type: 'text',
       required: true,
-      displayName: 'Login / E-mail: ',
+      displayName: 'Username / E-mail: ',
       placeholder: 'Digite seu login ou seu e-mail'
   },
   {

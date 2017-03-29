@@ -28,8 +28,9 @@ header h1{color: white;}
     background-color: transparent;
     border: 0px;
     color: white;
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Yesteryear';
 }
 .homeBtn img{
     margin-right: 10px;
@@ -50,4 +51,19 @@ header h1{color: white;}
 .topMenus:hover{
     border: 2px solid $dblueh;
     color: $dblueh;
+}
+.login-form{
+    text-align: center;
+    width: 70%;
+    max-width: 700px;
+    background-color: white;
+    box-shadow: 8px 10px 5px #e2e2e2;
+    margin: 0 auto;
+    min-height: 300px;
+    height: auto;
+}
+.at-title{
+    background-color: $dblue;
+    color: white;
+    height: 75px;
 }

@@ -1,11 +1,9 @@
 Template.Header.events({
-	'click .login-toggle': ()=> {
-		Session.set('nav-toggle', 'open');
+	'click #logonBtn': ()=> {
+		$("#login-form").show();
 	},
 
-	'click #logout': () => {
-		//Meteor.logout();
-		/* Chamando a função que está definida dentro de onLogoutHook */
+	'click #logoutBtn': () => {
 		AccountsTemplates.logout();
 	}
 });

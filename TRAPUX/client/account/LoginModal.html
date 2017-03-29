@@ -1,6 +1,6 @@
 <template name="LoginModal">
 	{{# if $not currentUser}}
-		<div class="login-form {{$.Session.get 'nav-toggle'}}">
+		<div id="login-form">
 			<!-- Isso adiciona um form sem estilo -->
 			{{> atForm }}
 		</div>

@@ -52,7 +52,7 @@ header h1{color: white;}
     border: 2px solid $dblueh;
     color: $dblueh;
 }
-.login-form{
+#login-form{
     text-align: center;
     width: 70%;
     max-width: 700px;
@@ -61,6 +61,7 @@ header h1{color: white;}
     margin: 0 auto;
     min-height: 300px;
     height: auto;
+    display: none;
 }
 .at-title{
     background-color: $dblue;

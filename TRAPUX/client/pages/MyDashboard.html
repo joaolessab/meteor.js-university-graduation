@@ -1,16 +1,24 @@
 <template name="MyDashboard">
-    {{#each users}}
-    <h1 class="page-title">Bem Vindo, {{profile.firstName}}</h1>
-    	
-    	{{#if checkCliente profile.profession}}
-    		{{> ClienteDashboard}}
-    	
-    	{{else}} {{#if checkGestor profile.profession}}
-    		{{> GestorDashboard}}
+    {{# if currentUser}}
+        
+        {{#each users}}
+        <h1 class="page-title">Bem Vindo, {{profile.firstName}}</h1>
+        	
+        	{{#if checkCliente profile.profession}}
+        		{{> ClienteDashboard}}
+        	
+        	{{else}} {{#if checkGestor profile.profession}}
+        		{{> GestorDashboard}}
 
-    	{{else}} {{#if checkDev profile.profession}}
-    		{{> DevDashboard}}
-    	{{/if}}{{/if}}{{/if}}
+        	{{else}} {{#if checkDev profile.profession}}
+        		{{> DevDashboard}}
+        	{{/if}}{{/if}}{{/if}}
 
-    {{/each}}
+        {{/each}}
+
+    {{else}}
+
+        <h1>Não autorizado</h1>
+        
+    {{/if}}
 </template>

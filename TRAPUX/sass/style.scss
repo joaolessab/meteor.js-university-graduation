@@ -52,7 +52,7 @@ header h1{color: white;}
     border: 2px solid $dblueh;
     color: $dblueh;
 }
-#login-form{
+.at-form{
     text-align: center;
     width: 70%;
     max-width: 700px;
@@ -61,7 +61,6 @@ header h1{color: white;}
     margin: 0 auto;
     min-height: 300px;
     height: auto;
-    display: none;
     position: relative;
     z-index: 70;
 }
@@ -94,7 +93,15 @@ header h1{color: white;}
     float: right;
 }
 
-#login-form input{
+#login-form{
+    background: #e9e9ea;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: none;
+}
+
+.at-form input{
     line-height: normal;
     height: 50px;
     border: 0px solid;
@@ -102,7 +109,7 @@ header h1{color: white;}
     width: 60%;
 }
 
-#login-form select{
+.at-form select{
     width: 60%;
     background-color: transparent;
     height: 50px;
@@ -130,7 +137,4 @@ header h1{color: white;}
     width: 100%;
     background-color: red;
     background-image: url ("./public/images/main-banner.jpg");
-}
-.homeDivAdjust{
-    margin-top: -403px !important;
 }

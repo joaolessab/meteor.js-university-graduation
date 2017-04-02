@@ -13,6 +13,7 @@ body {
     color: $text;
     font-family: Montserrat;
     margin: 0px;
+    background-color: #e9e9ea;
 }
 
 .centered{text-align: center;}
@@ -134,7 +135,10 @@ header h1{color: white;}
 }
 
 #homeDiv{
+    background-image: url(resources/main-banner.jpg);
+    height: 350px;
     width: 100%;
-    background-color: red;
-    background-image: url ("./public/images/main-banner.jpg");
+    background-position: 25% 0 !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

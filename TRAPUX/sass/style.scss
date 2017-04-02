@@ -168,7 +168,7 @@ header h1{color: white;}
 .leftMenu{
     float: left;
     background: #19283f;
-    height: 600px;
+    height: 650px;
     width: 250px;
     margin-top: -30px;
 }
@@ -202,14 +202,16 @@ header h1{color: white;}
     padding: 20px;
     height: auto;
     border-radius: 3px;
-    min-height: 250px;
+    min-height: 260px;
+    max-height: 260px;
 }
 
 #allOrders{
     background-color: white;
     padding: 20px;
     height: auto;
-    min-height: 250px;
+    min-height: 260px;
+    max-height: 260px;
     border-radius: 3px;
 }
 
@@ -220,4 +222,12 @@ header h1{color: white;}
 }
 .eachOrder{
     cursor: pointer;
+}
+
+.blockTitle em{
+    font-size: 10px;
+}
+
+.full{
+    width: 96% !important;
 }

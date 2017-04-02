@@ -2,7 +2,7 @@
 AccountsTemplates.configure({
     texts: {
       title: {
-        signIn: "Faça o seu Login",
+        signIn: "Entre em nosso sistema",
         signUp: "Crie uma conta"
       },
 

@@ -45,14 +45,32 @@ header h1{color: white;}
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: $dblue;
+    background-color: #19283f;
     float: right;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 7px;
+    text-decoration: none !important;
 }
 .topMenus:hover{
     border: 2px solid $dblueh;
     color: $dblueh;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none !important;
+    padding-top: 5px;
 }
+.actived{
+    background-color: #243a5d;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.topMenus:active, .topMenus:visited{
+    color: white;
+    text-decoration: none !important;
+}
+
 .at-form{
     text-align: center;
     width: 70%;

@@ -8,14 +8,14 @@
 	        </button>
 
 	    {{#if currentUser}}
-	        <button type="button" class="topMenus" id="logoutBtn">Sair</button>
+	        <a type="button" class="topMenus" id="logoutBtn">Sair</a>
 
-	        <button type="button" class="topMenus" href="/mydash">Meu Dashboard</button>
+	        <a class="topMenus" href="/mydash" id="mydashBtn">Meu Dashboard</a>
 	    {{else}}
-	        <button type="button" class="topMenus" id="logonBtn">Fazer Logon</button>
+	        <a class="topMenus" id="logonBtn">Fazer Logon</a>
 	    {{/if}}
 
-	    <button type="button" class="topMenus" id="homeBtn" href="/">Início</button>
+	    <a type="button" class="topMenus actived" id="homeBtn" href="/">Início</a>
 
     	</div>
     </header>    

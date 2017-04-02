@@ -2,17 +2,20 @@
 	<div class="superDiv">
         
         <div class="leftMenu">
-            <button>Criar Chamado</button>
-            <button>Visualizador de Chamados</button>
-            <button>Avaliar Desenvolvedor</button>
-            <button>Gráficos / Relatórios</button>
+
+            <button class="itemBtn" id="create" type="button">Criar Chamado</button>
+            <button class="itemBtn" id="view" type="button">Visualizador de Chamados</button>
+            <button class="itemBtn" id="evaluate" type="button">Avaliar Desenvolvedor</button>
+            <button class="itemBtn" id="chart" type="button">Gráficos / Relatórios</button>
+
         </div>
 
         <div class="dashboardArea">
             {{#each users}}
                 <h2 class="welcome">Bem Vindo, {{profile.firstName}}</h2>
 
-                <div id="mainPanel">
+                <!-- PRINCIPAL -->
+                <div id="mainPanel" class="panels">
 
                     <div class="blockline">
                         <div class="col-sm-2 leftHalf">

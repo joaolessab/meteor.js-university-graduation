@@ -16,6 +16,11 @@ body {
     background-color: #e9e9ea;
 }
 
+.navHead{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .centered{text-align: center;}
 
 header{
@@ -172,7 +177,8 @@ header h1{color: white;}
     width: 250px;
     margin-top: -30px;
 }
-.leftMenu button{
+
+.itemBtn{
     height: 95px;
     width: 250px;
     background-color: #19283f;
@@ -180,10 +186,11 @@ header h1{color: white;}
     color: white;
     border-top: 1px solid #243a5d;
 }
-.leftMenu button:hover, .actionSelected{
+.itemBtn:hover, .actionSelected{
     background-color: #283f63;
     border-left: 10px solid $dblueh;
 }
+
 .dashboardArea{
     height: auto;
     width: 100%;

@@ -166,16 +166,13 @@ header h1{color: white;}
     background-size: cover;
 }
 
-.superDiv{
-    width: 100%;
-    height: auto;
-}
 .leftMenu{
     float: left;
     background: #19283f;
-    height: 650px;
+    height: 100%;
     width: 250px;
-    margin-top: -30px;
+    margin-top: 0px;
+    position: absolute;
 }
 
 .itemBtn{
@@ -237,4 +234,11 @@ header h1{color: white;}
 
 .full{
     width: 96% !important;
+}
+
+.app-layout{
+    width: 100%;
+    height: auto;
+    background: red;
+    position: absolute;
 }

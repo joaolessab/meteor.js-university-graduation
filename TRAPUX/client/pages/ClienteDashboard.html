@@ -1,61 +1,58 @@
 <template name="ClienteDashboard">
-	<div class="superDiv">
-        
-        <div class="leftMenu">
+	
+    <div class="leftMenu">
 
-            <button class="itemBtn" id="create" type="button">Criar Chamado</button>
-            <button class="itemBtn" id="view" type="button">Visualizador de Chamados</button>
-            <button class="itemBtn" id="evaluate" type="button">Avaliar Desenvolvedor</button>
-            <button class="itemBtn" id="chart" type="button">Gráficos / Relatórios</button>
+        <button class="itemBtn" id="create" type="button">Criar Chamado</button>            <button class="itemBtn" id="view" type="button">Visualizador de Chamados</button>
+        <button class="itemBtn" id="evaluate" type="button">Avaliar Desenvolvedor</button>
+        <button class="itemBtn" id="chart" type="button">Gráficos / Relatórios</button>
 
-        </div>
+    </div>
 
-        <div class="dashboardArea">
-            {{#each users}}
-                <h2 class="welcome">Bem Vindo, {{profile.firstName}}</h2>
-
-                <!-- PRINCIPAL -->
-                <div id="mainPanel" class="panels">
-
-                    <div class="blockline">
-                        <div class="col-sm-2 leftHalf">
-                            <div id="myOrders">
-                                <p class="blockTitle">Resumo dos chamados <em>(Protótipo)</em></p><hr />
-                            </div>
-                        </div>
+    <div class="dashboardArea">
+        {{#each users}}
+            <h2 class="welcome">Bem Vindo, {{profile.firstName}}</h2>
 
 
-                        <div class="col-sm-2 rightHalf">
-                            <div id="allOrders">
-                                <p class="blockTitle">Últimos chamados</p><hr />
+            <div id="mainPanel" class="panels">
 
-                                <a class="eachOrder">
-                                    <em>Projeto: Civitas</em>
-                                    <p>31. Criar novo botão na barra esquerda</p>
-                                </a>
-
-                                <a class="eachOrder">
-                                    <em>Projeto: Civitas</em>
-                                    <p>31. Criar novo botão na barra esquerda</p>
-                                </a>
-
-                                <a class="eachOrder">
-                                    <em>Projeto: Civitas</em>
-                                    <p>31. Criar novo botão na barra esquerda</p>
-                                </a>
-                            </div>
+                <div class="blockline">
+                    <div class="col-sm-2 leftHalf">
+                        <div id="myOrders">
+                            <p class="blockTitle">Resumo dos chamados <em>(Protótipo)</em></p><hr />
                         </div>
                     </div>
 
-                    <div class="blockline">
-                        <div class="col-sm-2 full" style="margin-top: 20px;">
-                            <div id="myOrders">
-                                <p class="blockTitle">Relatório de chamados<em> (Protótipo)</em></p><hr />
-                            </div>
+
+                    <div class="col-sm-2 rightHalf">
+                        <div id="allOrders">
+                            <p class="blockTitle">Últimos chamados</p><hr />
+
+                            <a class="eachOrder">
+                                <em>Projeto: Civitas</em>
+                                <p>31. Criar novo botão na barra esquerda</p>
+                            </a>
+
+                            <a class="eachOrder">
+                                <em>Projeto: Civitas</em>
+                                <p>31. Criar novo botão na barra esquerda</p>
+                            </a>
+
+                            <a class="eachOrder">
+                                <em>Projeto: Civitas</em>
+                                <p>31. Criar novo botão na barra esquerda</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-            {{/each}}
-        </div>
+
+                <div class="blockline">
+                    <div class="col-sm-2 full" style="margin-top: 20px;">
+                        <div id="myOrders">
+                            <p class="blockTitle">Relatório de chamados<em> (Protótipo)</em></p><hr />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
     </div>
 </template>

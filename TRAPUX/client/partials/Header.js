@@ -4,6 +4,11 @@ Template.Header.events({
 		$("#homeDiv").hide();
 	},
 
+	'click #homeBtn': ()=>{
+		$("#login-form").hide();
+		$("#homeDiv").show();
+	},
+
 	'click #logoutBtn': () => {
 		AccountsTemplates.logout();
 	}

@@ -170,7 +170,7 @@ header h1{color: white;}
     background: #19283f;
     height: 600px;
     width: 250px;
-    margin-top: -20px;
+    margin-top: -30px;
 }
 .leftMenu button{
     height: 95px;
@@ -180,12 +180,44 @@ header h1{color: white;}
     color: white;
     border-top: 1px solid #243a5d;
 }
-.leftMenu button:hover{
+.leftMenu button:hover, .actionSelected{
     background-color: #283f63;
     border-left: 10px solid $dblueh;
 }
 .dashboardArea{
     height: auto;
-    text-align: center;
     width: 100%;
+    padding-left: 250px;
+}
+.welcome{
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.leftHalf{width: 38% !important;}
+.rightHalf{width: 58% !important;}
+
+#myOrders{
+    background-color: white;
+    padding: 20px;
+    height: auto;
+    border-radius: 3px;
+    min-height: 250px;
+}
+
+#allOrders{
+    background-color: white;
+    padding: 20px;
+    height: auto;
+    min-height: 250px;
+    border-radius: 3px;
+}
+
+.blockTitle{
+    color: $dblueh;
+    font-weight: bold;
+    font-size: 18px;
+}
+.eachOrder{
+    cursor: pointer;
 }

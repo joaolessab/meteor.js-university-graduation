@@ -14,7 +14,7 @@ if (Meteor.isClient){
 FlowRouter.route('/', {
     name: 'home',
     action() {
-        BlazeLayout.render("HomeLayout", {main: "Home"});
+        BlazeLayout.render("SystemLayout", {main: "Home"});
     }
 });
 

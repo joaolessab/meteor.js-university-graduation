@@ -160,3 +160,25 @@ header h1{color: white;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.superDiv{
+    width: 100%;
+    height: auto;
+}
+.leftMenu{
+    float: left;
+    background: #19283f;
+    height: 600px;
+    width: 250px;
+}
+.leftMenu button{
+    height: 95px;
+    width: 250px;
+    background-color: #19283f;
+    border: 0px;
+    color: white;
+    border-top: 1px solid #243a5d;
+}
+.leftMenu button:hover{
+    background-color: $dblueh;
+}

@@ -170,6 +170,7 @@ header h1{color: white;}
     background: #19283f;
     height: 600px;
     width: 250px;
+    margin-top: -20px;
 }
 .leftMenu button{
     height: 95px;
@@ -180,5 +181,11 @@ header h1{color: white;}
     border-top: 1px solid #243a5d;
 }
 .leftMenu button:hover{
-    background-color: $dblueh;
+    background-color: #283f63;
+    border-left: 10px solid $dblueh;
+}
+.dashboardArea{
+    height: auto;
+    text-align: center;
+    width: 100%;
 }

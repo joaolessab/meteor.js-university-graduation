@@ -5,7 +5,7 @@ Template.ClienteDashboard.helpers({
 	},
 	lastOrders: function(){
 		//Filtrando as últimas 3 orders
-		return Uxorders.find({userId: Meteor.userId()}, {limit: 3});
+		return Uxorders.find({userId: Meteor.userId()}, { sort: { createdAt: 'desc' }, limit: 3 });
 	}
 });
 
@@ -50,6 +50,7 @@ Template.ClienteDashboard.events({
 		$("#title").val("");
 		$("#type").val("sel");
 		$("#description").val("");
+		return false;
 	},
 
 	//Criando novo chamado no Banco

@@ -319,6 +319,7 @@ and (max-width: 715px){
         width: 90% !important;
     }
     form button{margin-top: 2px;}
+    .errorMsg, .sucessMsg{width: 90% !important;}
 }
 
 form{
@@ -333,4 +334,29 @@ form input[type='submit']:hover{
 form button:hover{
     color: white;
     background-color: #e63737;
+}
+
+.errorMsg{
+    background-color: #e63737;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 30px;
+    padding-top: 5px;
+    color: white;
+    border-radius: 3px;
+    display: none;
+    text-align: center;
+}
+.sucessMsg{
+    background-color: #6abf56;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 30px;
+    padding-top: 5px;
+    color: white;
+    border-radius: 3px;
+    display: none;
+    text-align: center;
 }

@@ -35,6 +35,10 @@ Template.ClienteDashboard.events({
 		$(".itemBtn").removeClass("actionSelected");
 
 		$(".panels").hide();
+		
+		$(".errorMsg").hide();
+		$(".sucessMsg").hide();
+		
 		$("#mainPanel").show();
 	},
 	'click #clearOrder': ()=> {
@@ -51,8 +55,18 @@ Template.ClienteDashboard.events({
 		var type = $("#type").val();
 		var description = $("#description").val();
 
-		/* Chamando lá do Method */
-		Meteor.call('createOrder', project, title, type, description);
-		return false;
+		if (type == 'sel'){
+			$(".sucessMsg").hide();
+			$(".errorMsg").show();
+			return false;
+		}
+		else{
+			/* Chamando lá do Method */
+			Meteor.call('createOrder', project, title, type, description);
+			$(".errorMsg").hide();
+			$(".sucessMsg").show();
+			return false;
+		}
+		
 	}
 });

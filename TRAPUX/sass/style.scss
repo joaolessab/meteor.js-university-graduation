@@ -211,7 +211,6 @@ form button, form input[type='submit']{
 .dashboardArea{
     height: auto;
     width: 100%;
-    padding-left: 250px;
 }
 .welcome{
     margin-left: 40px;
@@ -318,7 +317,6 @@ and (max-width: 715px){
     }
     .dashboardArea{
         position: absolute !important;
-        margin-top: 400px !important;
     }
     form input, form select, form textarea, form button{
         width: 90% !important;
@@ -394,4 +392,26 @@ form button:hover{
     border-radius: 3px;
     font-size: 11px;
     height: 28px;
+}
+
+.ordersBtn{
+    float: right;
+    margin-top: -40px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    border: 0px;
+    height: 35px;
+    color: #19283f;
+    background-color: #e9e9ea;
+}
+.ordersBtn:hover{
+    color: white;
+    background-color: #19283f;
+    border-left: 10px solid #5584ff;
+}
+#view{
+    right: 125px;
+    position: relative;
 }

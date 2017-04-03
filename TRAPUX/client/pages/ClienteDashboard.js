@@ -15,34 +15,20 @@ Template.ClienteDashboard.helpers({
 
 Template.ClienteDashboard.events({
 	'click #create': ()=> {
-		$(".itemBtn").removeClass("actionSelected");
-		$("#create").addClass("actionSelected");
-
 		$(".panels").hide();
 		$("#createPanel").show();
 	},
 	'click #view': ()=> {
-		$(".itemBtn").removeClass("actionSelected");
-		$("#view").addClass("actionSelected");
-
 		$(".panels").hide();
 		$("#viewPanel").show();
 	},
 	'click #evaluate': ()=> {
-		$(".itemBtn").removeClass("actionSelected");
-		$("#evaluate").addClass("actionSelected");
-
 		$(".panels").hide();
 	},
 	'click #chart': ()=> {
-		$(".itemBtn").removeClass("actionSelected");
-		$("#chart").addClass("actionSelected");
-
 		$(".panels").hide();
 	},
 	'click .closeBtn': ()=> {
-		$(".itemBtn").removeClass("actionSelected");
-
 		$(".panels").hide();
 		
 		$(".errorMsg").hide();

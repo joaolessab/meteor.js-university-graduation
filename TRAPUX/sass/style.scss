@@ -199,9 +199,18 @@ header h1{color: white;}
     margin-bottom: 20px;
 }
 .leftHalf{width: 38% !important;}
-.rightHalf{width: 58% !important;}
+.rightHalf{width: 62% !important;}
 
 #myOrders{
+    background-color: white;
+    padding: 20px;
+    height: auto;
+    border-radius: 3px;
+    min-height: 260px;
+    max-height: 260px;
+}
+
+form{
     background-color: white;
     padding: 20px;
     height: auto;
@@ -233,11 +242,19 @@ header h1{color: white;}
 }
 
 .full{
-    width: 96% !important;
+    width: 100% !important;
 }
 
 .app-layout{
     width: 100%;
     height: 100%;
     position: absolute;
+}
+#createPanel{
+    display: none;
+}
+
+@media only screen 
+and (max-width: 880px){
+    .leftHalf, .rightHalf{width: 100% !important;}
 }

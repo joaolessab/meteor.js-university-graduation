@@ -61,13 +61,17 @@
 
             <div class="blockline">
                 <div class="col-sm-2 full" style="margin-top: 20px;">
-
-                    <form id="createOrder">
-                        <label>Task Name: </label>
-                        <input type="text" name="name" placeholder="Add Task" /> 
-                        <input type="submit" value="Submit" />
-                    </form>
-                    
+                    <div class="divForm">                    
+                        <p class="blockTitle">Novo Chamado</p>
+                        <button type="button" class="closeBtn">X</button>
+                        <hr/>
+                        <form id="createOrder">
+                            <input type="text" id="project" placeholder="Nome do Projeto" /><br>
+                            <input placeholder="Título da Requisição" type="text" id="title"><br>
+                            <textarea id="description" placeholder="Especifique aqui a sua requisição, faça comentários e fique a vontade para dar mais detalhes..."></textarea><br>
+                            <input type="submit" value="Salvar" />
+                        </form>
+                    </div>
                 </div>
             </div>
 

@@ -210,7 +210,7 @@ header h1{color: white;}
     max-height: 260px;
 }
 
-form{
+.divForm{
     background-color: white;
     padding: 20px;
     height: auto;
@@ -257,4 +257,9 @@ form{
 @media only screen 
 and (max-width: 880px){
     .leftHalf, .rightHalf{width: 100% !important;}
+}
+
+.closeBtn{
+    float: right;
+    margin-top: -35px;
 }

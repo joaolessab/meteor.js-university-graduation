@@ -31,16 +31,21 @@ Template.ClienteDashboard.events({
 
 		$(".panels").hide();
 	},
+	'click .closeBtn': ()=> {
+		$(".itemBtn").removeClass("actionSelected");
+
+		$(".panels").hide();
+		$("#mainPanel").show();
+	},
 
 	//Criando novo chamado no Banco
 	'submit #createOrder': function(event){
-		var name = event.target.name.value;
+		var project = $("#project").val();
+		var title = $("#title").val();
+		var description = $("#description").val();
 
 		/* Chamando lá do Method */
-		Meteor.call('createOrder', name);
-
-		// Setando o valor do input para nada
-		event.target.name.value = "";
+		Meteor.call('createOrder', project, title, description);
 		return false;
 	}
 });

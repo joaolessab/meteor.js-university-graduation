@@ -263,3 +263,25 @@ and (max-width: 880px){
     float: right;
     margin-top: -35px;
 }
+
+@media only screen 
+and (max-width: 715px){
+    .leftMenu{
+        width: 100% !important;
+        position: relative !important;
+        height: auto !important;
+    }
+    .itemBtn{
+        width: 100% !important;
+    }
+    .dashboardArea{
+        padding-left: 0px !important;
+    }
+    .app-layout{
+        height: auto !important;
+    }
+    .dashboardArea{
+        position: absolute !important;
+        margin-top: 400px !important;
+    }
+}

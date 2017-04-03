@@ -12,7 +12,7 @@
         {{#each users}}
             <h2 class="welcome">Bem Vindo, {{profile.firstName}}</h2>
 
-
+            <!-- MAIN PANEL -->
             <div id="mainPanel" class="panels">
 
                 <div class="blockline">
@@ -54,5 +54,25 @@
                 </div>
             </div>
         {{/each}}
+        <!-- MAIN PANEL END-->
+
+        <!-- CREATE PANEL -->
+        <div id="createPanel" class="panels">
+
+            <div class="blockline">
+                <div class="col-sm-2 full" style="margin-top: 20px;">
+
+                    <form id="createOrder">
+                        <label>Task Name: </label>
+                        <input type="text" name="name" placeholder="Add Task" /> 
+                        <input type="submit" value="Submit" />
+                    </form>
+                    
+                </div>
+            </div>
+
+        </div>
+        <!-- CREATE PANEL END -->
+    
     </div>
 </template>

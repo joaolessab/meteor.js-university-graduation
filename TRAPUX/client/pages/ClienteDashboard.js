@@ -11,6 +11,7 @@ Template.ClienteDashboard.events({
 		$("#create").addClass("actionSelected");
 
 		$(".panels").hide();
+		$("#createPanel").show();
 	},
 	'click #view': ()=> {
 		$(".itemBtn").removeClass("actionSelected");
@@ -29,5 +30,17 @@ Template.ClienteDashboard.events({
 		$("#chart").addClass("actionSelected");
 
 		$(".panels").hide();
-	}	
+	},
+
+	//Criando novo chamado no Banco
+	'submit #createOrder': function(event){
+		var name = event.target.name.value;
+
+		/* Chamando lá do Method */
+		Meteor.call('createOrder', name);
+
+		// Setando o valor do input para nada
+		event.target.name.value = "";
+		return false;
+	}
 });

@@ -4,7 +4,7 @@ Uxorders = new Mongo.Collection('uxorders');
 //Copos.find({}, {sort: {order: 1}}).fetch()
 //https://docs.meteor.com/api/collections.html
 
-// DANDO AUTORIZAÇÃO PARA MEXER COM O COPOS
+// DANDO AUTORIZAÇÃO PARA MEXER COM O UXORDERS
 Uxorders.allow({
 	insert: function(userId, doc){
 		// Se userId existir, então você está logado, então você pode inserir um recipe
@@ -17,16 +17,16 @@ Uxorders.allow({
 
 //Métodos da Collection Uxorders
 Meteor.methods({
-	//Função para update
-	/*toogleMenuItem: function(id, currentState){
-		Uxorders.update(id, {
-			$set: {
-				inMenu: !currentState
-			}
-		})
-	},
-	//Função para remoção
-	deleteRecipe: function(id){
-		Uxorders.remove(id);
-	}*/
+	createOrder: function(name){
+		if(!Meteor.userId()){
+			throw new Meteor.Error('No Access');
+		}
+
+		Uxorders.insert({
+			name: name,
+			createdAt: new Date(),
+			userId: Meteor.userId()
+		});
+
+	}
 });

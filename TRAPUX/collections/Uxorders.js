@@ -21,7 +21,6 @@ Meteor.methods({
 		if(!Meteor.userId()){
 			throw new Meteor.Error('No Access');
 		}
-
 		Uxorders.insert({
 			project: project,
 			title: title,
@@ -31,6 +30,5 @@ Meteor.methods({
 			createdAt: new Date(),
 			userId: Meteor.userId()
 		});
-
 	}
 });

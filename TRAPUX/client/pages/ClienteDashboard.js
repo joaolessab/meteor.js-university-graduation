@@ -2,6 +2,10 @@ Template.ClienteDashboard.helpers({
 	//Cada usuário
 	users: function(){
 		return Meteor.users.find({_id: Meteor.userId()});
+	},
+	lastOrders: function(){
+		//Filtrando as últimas 3 orders
+		return Uxorders.find({userId: Meteor.userId()}, {limit: 3});
 	}
 });
 

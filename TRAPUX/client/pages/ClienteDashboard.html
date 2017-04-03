@@ -21,26 +21,18 @@
                             <p class="blockTitle">Resumo dos chamados <em>(Protótipo)</em></p><hr />
                         </div>
                     </div>
-
-
+                    
                     <div class="col-sm-2 rightHalf">
                         <div id="allOrders">
                             <p class="blockTitle">Últimos chamados</p><hr />
 
-                            <a class="eachOrder">
-                                <em>Projeto: Civitas</em>
-                                <p>31. Criar novo botão na barra esquerda</p>
+                            {{#each lastOrders}}
+                            <a class="eachOrder" id="{{_id}}">
+                                <em>Projeto: {{project}}</em>
+                                <p>{{description}}</p>
                             </a>
+                            {{/each}}
 
-                            <a class="eachOrder">
-                                <em>Projeto: Civitas</em>
-                                <p>31. Criar novo botão na barra esquerda</p>
-                            </a>
-
-                            <a class="eachOrder">
-                                <em>Projeto: Civitas</em>
-                                <p>31. Criar novo botão na barra esquerda</p>
-                            </a>
                         </div>
                     </div>
                 </div>

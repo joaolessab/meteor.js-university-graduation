@@ -225,8 +225,8 @@ form button, form input[type='submit']{
     padding: 20px;
     height: auto;
     border-radius: 3px;
-    min-height: 260px;
-    max-height: 260px;
+    min-height: 290px;
+    max-height: 290px;
 }
 
 .divForm{
@@ -242,8 +242,8 @@ form button, form input[type='submit']{
     background-color: white;
     padding: 20px;
     height: auto;
-    min-height: 260px;
-    max-height: 260px;
+    min-height: 290px;
+    max-height: 290px;
     border-radius: 3px;
 }
 
@@ -274,7 +274,7 @@ form button, form input[type='submit']{
     height: 100%;
     position: absolute;
 }
-#createPanel{
+#createPanel, #viewPanel{
     display: none;
 }
 
@@ -365,35 +365,6 @@ form button:hover{
     text-align: center;
 }
 
-#viewPanel li{
-    height: 40px;
-    background-color: #f3f3f3;
-    padding-top: 10px;
-    list-style: none;
-    padding-left: 20px;
-    border-radius: 3px;
-    color: black;
-    margin-top: 8px;
-    margin-left: -40px;
-    box-shadow: rgba(123, 123, 123, 0.2) 1px 1px 1px;
-}
-#viewPanel li:hover
-{
-    cursor: pointer;
-    background-color: #6abf56;
-    color: white;
-}
-
-#viewPanel li button{
-    float: right;
-    margin-right: 20px;
-    border: 0px;
-    margin-top: -3px;
-    border-radius: 3px;
-    font-size: 11px;
-    height: 28px;
-}
-
 .ordersBtn{
     float: right;
     margin-top: -40px;
@@ -414,4 +385,42 @@ form button:hover{
 #view{
     right: 125px;
     position: relative;
+}
+
+#lastOrders li{
+    height: 58px;
+    background-color: #f3f3f3;
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 20px;
+    border-radius: 3px;
+    color: black;
+    margin-top: 8px;
+    margin-left: -40px;
+    box-shadow: rgba(123, 123, 123, 0.2) 1px 1px 1px;
+}
+#lastOrders li:hover
+{
+    cursor: pointer;
+    background-color: #6abf56;
+    color: white !important;
+}
+
+#viewPanel li{
+    height: 58px;
+    background-color: #f3f3f3;
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 20px;
+    border-radius: 3px;
+    color: black;
+    margin-top: 8px;
+    margin-left: -40px;
+    box-shadow: rgba(123, 123, 123, 0.2) 1px 1px 1px;
+}
+#viewPanel li:hover
+{
+    cursor: pointer;
+    background-color: #6abf56;
+    color: white !important;
 }

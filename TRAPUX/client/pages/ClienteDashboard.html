@@ -28,16 +28,18 @@
 
                             <button class="ordersBtn" id="view" type="button">Visualizador de Chamados</button>
 
-                            
+
                              <button class="ordersBtn" id="create" type="button">Criar Chamado</button>
                             <hr />
-
-                            {{#each lastOrders}}
-                            <a class="eachOrder" id="{{_id}}">
-                                <em>Projeto: {{project}}</em>
-                                <p>{{title}}</p>
-                            </a>
-                            {{/each}}
+                            
+                            <ul id="lastOrders">
+                                {{#each lastOrders}}
+                                <li class="eachOrder" id="{{_id}}">
+                                    <em>Projeto: {{project}}</em>
+                                    <p>{{title}}</p>
+                                </li>
+                                {{/each}}
+                            </ul>
 
                         </div>
                     </div>
@@ -97,7 +99,10 @@
 
                         <ul>
                         {{#each uxorder}}
-                            <li id="{{_id}}">{{title}}</li>
+                            <li class="eachOrder" id="{{_id}}">
+                                <em>Projeto: {{project}}</em>
+                                <p>{{title}}</p>
+                            </li>
                         {{/each}}
                         </ul>
 

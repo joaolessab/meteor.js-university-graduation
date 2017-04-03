@@ -6,6 +6,10 @@ Template.ClienteDashboard.helpers({
 	lastOrders: function(){
 		//Filtrando as últimas 3 orders
 		return Uxorders.find({userId: Meteor.userId()}, { sort: { createdAt: 'desc' }, limit: 3 });
+	},
+	uxorder: function(){
+		//Filtrando as últimas 3 orders
+		return Uxorders.find({userId: Meteor.userId()}, { sort: { createdAt: 'desc' }});
 	}
 });
 
@@ -22,6 +26,7 @@ Template.ClienteDashboard.events({
 		$("#view").addClass("actionSelected");
 
 		$(".panels").hide();
+		$("#viewPanel").show();
 	},
 	'click #evaluate': ()=> {
 		$(".itemBtn").removeClass("actionSelected");

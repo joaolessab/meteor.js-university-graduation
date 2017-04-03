@@ -78,6 +78,29 @@
 
         </div>
         <!-- CREATE PANEL END -->
+
+        <!-- VIEW PANEL -->
+        <div id="viewPanel" class="panels">
+
+            <div class="blockline">
+                <div class="col-sm-2 full" style="margin-top: 20px;">
+                    <div class="divForm">                    
+                        <p class="blockTitle">Visualizar de Chamados</p>
+                        <button type="button" class="closeBtn">X</button>
+                        <hr/>
+
+                        <ul>
+                        {{#each uxorder}}
+                            <li id="{{_id}}">{{title}}</li>
+                        {{/each}}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- VIEW PANEL END -->
     
     </div>
 </template>

@@ -366,3 +366,32 @@ form button:hover{
     display: none;
     text-align: center;
 }
+
+#viewPanel li{
+    height: 40px;
+    background-color: #f3f3f3;
+    padding-top: 10px;
+    list-style: none;
+    padding-left: 20px;
+    border-radius: 3px;
+    color: black;
+    margin-top: 8px;
+    margin-left: -40px;
+    box-shadow: rgba(123, 123, 123, 0.2) 1px 1px 1px;
+}
+#viewPanel li:hover
+{
+    cursor: pointer;
+    background-color: #6abf56;
+    color: white;
+}
+
+#viewPanel li button{
+    float: right;
+    margin-right: 20px;
+    border: 0px;
+    margin-top: -3px;
+    border-radius: 3px;
+    font-size: 11px;
+    height: 28px;
+}

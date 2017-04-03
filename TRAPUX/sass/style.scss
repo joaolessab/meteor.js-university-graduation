@@ -259,6 +259,7 @@ form button, form input[type='submit']{
 }
 .eachOrder em{
     font-weight: bold;
+    font-style: normal;
 }
 
 .blockTitle em{
@@ -324,6 +325,7 @@ and (max-width: 715px){
     }
     form button{margin-top: 2px;}
     .errorMsg, .sucessMsg{width: 90% !important;}
+    #allOrders{margin-top: 20px !important;}
 }
 
 form{

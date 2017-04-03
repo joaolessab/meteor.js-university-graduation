@@ -61,8 +61,6 @@
                 <p class="blockTitle">Novo Chamado</p>
                 <button type="button" class="closeBtn">X</button>
                 <hr/>
-                <p class="errorMsg">*Selecione um valor para o tipo</p>
-                <p class="sucessMsg">Chamado criado com sucesso!</p>
                 <form id="createOrder">
                     <input type="text" id="project" placeholder="Nome do Projeto" /><br>
                     <input placeholder="Título da Requisição" type="text" id="title"><br>
@@ -75,26 +73,28 @@
                     <textarea id="description" placeholder="Especifique aqui a sua requisição, faça comentários e fique a vontade para dar mais detalhes..."></textarea><br>
                     <input type="submit" value="Salvar" />
                     <button id="clearOrder">Limpar</button>
+                    <p class="errorMsg">*Selecione um valor para o tipo</p>
+                    <p class="sucessMsg">Chamado criado com sucesso!</p>
                 </form>
             </div>
         </div>       
         <!-- CREATE PANEL END -->
 
         <!-- VIEW PANEL -->
-        <div id="viewPanel" class="panels backfolder" style="height: auto;">
-                    <div class="divForm">                    
-                        <p class="blockTitle">Visualizar de Chamados</p>
-                        <button type="button" class="closeBtn">X</button>
-                        <hr/>
+        <div id="viewPanel" class="panels backfolder autoback">
+            <div class="divForm">                    
+                <p class="blockTitle">Visualizar de Chamados</p>
+                <button type="button" class="closeBtn">X</button>
+                <hr/>
 
-                        <ul>
-                        {{#each uxorder}}
-                            <li class="eachOrder" id="{{_id}}">
-                                <em>Projeto: {{project}}</em>
-                                <p>{{title}}</p>
-                            </li>
-                        {{/each}}
-                        </ul>
+                <ul>
+                {{#each uxorder}}
+                    <li class="eachOrder" id="{{_id}}">
+                        <em>Projeto: {{project}}</em>
+                        <p>{{title}}</p>
+                    </li>
+                {{/each}}
+                </ul>
             </div>
         </div>
         <!-- VIEW PANEL END -->

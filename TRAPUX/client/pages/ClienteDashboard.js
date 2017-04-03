@@ -41,6 +41,7 @@ Template.ClienteDashboard.events({
 		$("#title").val("");
 		$("#type").val("sel");
 		$("#description").val("");
+		$(".errorMsg").hide();
 		return false;
 	},
 

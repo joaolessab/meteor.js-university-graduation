@@ -236,6 +236,9 @@ form button, form input[type='submit']{
     border-radius: 3px;
     min-height: 260px;
     max-height: auto;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 #allOrders{
@@ -272,7 +275,6 @@ form button, form input[type='submit']{
 .app-layout{
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 #createPanel, #viewPanel{
     display: none;
@@ -309,14 +311,8 @@ and (max-width: 715px){
     .itemBtn{
         width: 100% !important;
     }
-    .dashboardArea{
-        padding-left: 0px !important;
-    }
     .app-layout{
         height: auto !important;
-    }
-    .dashboardArea{
-        position: absolute !important;
     }
     form input, form select, form textarea, form button{
         width: 90% !important;
@@ -423,4 +419,13 @@ form button:hover{
     cursor: pointer;
     background-color: #6abf56;
     color: white !important;
+}
+
+.backfolder{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: -173px;
+    background-color: rgba(25, 40, 63, 0.89);
 }

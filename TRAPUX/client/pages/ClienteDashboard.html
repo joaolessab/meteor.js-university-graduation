@@ -68,6 +68,12 @@
                         <form id="createOrder">
                             <input type="text" id="project" placeholder="Nome do Projeto" /><br>
                             <input placeholder="Título da Requisição" type="text" id="title"><br>
+                            <label>Tipo do chamado: </label>
+                            <select id="type">
+                                <option value="nova">Nova função</option>
+                                <option value="reparo">Reparo</option>
+                                <option value="manutencao">Manutenção</option>
+                            </select><br>
                             <textarea id="description" placeholder="Especifique aqui a sua requisição, faça comentários e fique a vontade para dar mais detalhes..."></textarea><br>
                             <input type="submit" value="Salvar" />
                         </form>

@@ -42,10 +42,11 @@ Template.ClienteDashboard.events({
 	'submit #createOrder': function(event){
 		var project = $("#project").val();
 		var title = $("#title").val();
+		var type = $("#type").val();
 		var description = $("#description").val();
 
 		/* Chamando lá do Method */
-		Meteor.call('createOrder', project, title, description);
+		Meteor.call('createOrder', project, title, type, description);
 		return false;
 	}
 });

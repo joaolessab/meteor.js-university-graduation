@@ -17,7 +17,7 @@ Uxorders.allow({
 
 //Métodos da Collection Uxorders
 Meteor.methods({
-	createOrder: function(project, title, description){
+	createOrder: function(project, title, type, description){
 		if(!Meteor.userId()){
 			throw new Meteor.Error('No Access');
 		}
@@ -25,6 +25,7 @@ Meteor.methods({
 		Uxorders.insert({
 			project: project,
 			title: title,
+			type: type,
 			description: description,
 			status: 'open',
 			createdAt: new Date(),

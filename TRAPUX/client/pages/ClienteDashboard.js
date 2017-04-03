@@ -37,6 +37,12 @@ Template.ClienteDashboard.events({
 		$(".panels").hide();
 		$("#mainPanel").show();
 	},
+	'click #clearOrder': ()=> {
+		$("#project").val("");
+		$("#title").val("");
+		$("#type").val("sel");
+		$("#description").val("");
+	},
 
 	//Criando novo chamado no Banco
 	'submit #createOrder': function(event){

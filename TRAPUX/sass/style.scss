@@ -125,15 +125,35 @@ header h1{color: white;}
     display: none;
 }
 
-.at-form input{
+.at-form input, form input, form textarea{
     line-height: normal;
     height: 50px;
     border: 0px solid;
     border-bottom: 1px solid #d0d0d0;
     width: 60%;
+    padding-left: 10px;
 }
 
-.at-form select{
+form textarea{
+    height: 100px;
+    padding-top: 10px;
+}
+
+form select{
+    padding-left: 10px;
+    border-bottom: 1px solid #d0d0d0 !important;
+}
+
+form button, form input[type='submit']{
+    width: 30%;
+    height: 40px;
+    border: 0px;
+    background-color: #e9e9ea;
+    color: #283f63;
+    border-radius: 3px;
+}
+
+.at-form select, form select{
     width: 60%;
     background-color: transparent;
     height: 50px;
@@ -216,7 +236,7 @@ header h1{color: white;}
     height: auto;
     border-radius: 3px;
     min-height: 260px;
-    max-height: 260px;
+    max-height: auto;
 }
 
 #allOrders{
@@ -262,6 +282,17 @@ and (max-width: 880px){
 .closeBtn{
     float: right;
     margin-top: -35px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: #e9e9ea;
+    color: #283f63;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+.closeBtn:hover{
+    background-color: #19283f;
+    color: white;
 }
 
 @media only screen 
@@ -284,4 +315,22 @@ and (max-width: 715px){
         position: absolute !important;
         margin-top: 400px !important;
     }
+    form input, form select, form textarea, form button{
+        width: 90% !important;
+    }
+    form button{margin-top: 2px;}
+}
+
+form{
+    text-align: center;
+}
+
+form input[type='submit']:hover{
+    background-color: #6abf56;
+    color: white;
+}
+
+form button:hover{
+    color: white;
+    background-color: #e63737;
 }

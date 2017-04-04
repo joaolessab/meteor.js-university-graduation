@@ -1,11 +1,4 @@
 <template name="ClienteDashboard">
-	
-    <!--div class="leftMenu">
-     
-        <button class="itemBtn" id="evaluate" type="button">Avaliar Desenvolvedor</button>
-        <button class="itemBtn" id="chart" type="button">Gráficos / Relatórios</button>
-
-    </div-->
 
     <div class="dashboardArea">
         {{#each users}}
@@ -14,16 +7,19 @@
             <!-- MAIN PANEL -->
             <div id="mainPanel" class="panels">
 
+                <button class="rightBtn" id="evaluate" type="button">Avaliar Desenvolvedor</button>
+                <button class="rightBtn" id="report" type="button">Relatórios</button>
+
                 <div class="blockline">
                     <div class="col-sm-2 leftHalf">
-                        <div id="myOrders">
-                            <p class="blockTitle">Resumo dos chamados <em>(Protótipo)</em></p><hr />
+                        <div id="myOrders" class="user-row-one-populated">
+                            <p class="blockTitle">Resumo dos chamados</p><hr />
                            {{>ClientPizza}}
                         </div>
                     </div>
                     
                     <div class="col-sm-2 rightHalf">
-                        <div id="allOrders">
+                        <div id="allOrders" class="user-row-one-populated">
                             <p class="blockTitle">Últimos chamados</p>
 
                             <button class="ordersBtn" id="view" type="button">Visualizador de Chamados</button>
@@ -48,7 +44,7 @@
                 <div class="blockline">
                     <div class="col-sm-2 full" style="margin-top: 20px;">
                         <div id="myOrders">
-                            <p class="blockTitle">Relatório de chamados<em> (Protótipo)</em></p><hr />
+                            <p class="blockTitle">Relatório de chamados</p><hr />
                             {{>ClientAreaspline}}
                         </div>
                     </div>

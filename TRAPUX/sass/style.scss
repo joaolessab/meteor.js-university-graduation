@@ -225,7 +225,6 @@ form button, form input[type='submit']{
     padding: 20px;
     height: auto;
     border-radius: 3px;
-    min-height: 290px;
 }
 
 .divForm{
@@ -244,7 +243,10 @@ form button, form input[type='submit']{
     background-color: white;
     padding: 20px;
     height: auto;
-    min-height: 290px;
+    min-height: 490px;
+}
+.user-row-one-populated{
+    max-height: 490px;
     border-radius: 3px;
 }
 
@@ -431,3 +433,9 @@ form button:hover{
     height: auto;
     padding-bottom: 50px;
 }
+.rightBtn{
+    float: right;
+    margin-top: -30px;
+}
+#report{margin-right: 16px;}
+#evaluate{margin-right: 114px;}

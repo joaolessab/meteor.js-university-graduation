@@ -8,7 +8,7 @@ Template.ClienteDashboard.helpers({
 	},
 	lastOrders: function(){
 		//Filtrando as últimas 3 orders
-		return Uxorders.find({userId: Meteor.userId()}, { sort: { createdAt: 'desc' }, limit: 3 });
+		return Uxorders.find({userId: Meteor.userId()}, { sort: { createdAt: 'desc' }, limit: 6 });
 	},
 	uxorder: function(){
 		//Filtrando as últimas 3 orders
@@ -28,7 +28,7 @@ Template.ClienteDashboard.events({
 	'click #evaluate': ()=> {
 		$(".panels").hide();
 	},
-	'click #chart': ()=> {
+	'click #report': ()=> {
 		$(".panels").hide();
 	},
 	'click .closeBtn': ()=> {

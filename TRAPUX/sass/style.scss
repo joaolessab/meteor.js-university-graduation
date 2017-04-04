@@ -130,7 +130,7 @@ header h1{color: white;}
     height: 50px;
     border: 0px solid;
     border-bottom: 1px solid #d0d0d0;
-    width: 60%;
+    width: 90%;
     padding-left: 10px;
 }
 
@@ -145,7 +145,7 @@ form select{
 }
 
 form button, form input[type='submit']{
-    width: 30%;
+    width: 40%;
     height: 40px;
     border: 0px;
     background-color: #e9e9ea;
@@ -154,7 +154,7 @@ form button, form input[type='submit']{
 }
 
 .at-form select, form select{
-    width: 60%;
+    width: 90%;
     background-color: transparent;
     height: 50px;
     border: 0px;
@@ -427,7 +427,7 @@ form button:hover{
     width: 100%;
     position: absolute;
     margin-top: -173px;    
-    background-color: rgba(25, 40, 63, 0.94);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .autoback{
     height: auto;

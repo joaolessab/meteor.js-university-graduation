@@ -55,8 +55,28 @@ Template.ClienteDashboard.events({
 		var type = $("#type").val();
 		var description = $("#description").val();
 
-		if (type == 'sel'){
+		
+		if (project == ''){
 			$(".sucessMsg").hide();
+			$(".errorMsg").text("*Referencie o projeto ou nomeie um");
+			$(".errorMsg").show();
+			return false;
+		}
+		else if (title == ''){
+			$(".sucessMsg").hide();
+			$(".errorMsg").text("*Título não pode estar em branco");
+			$(".errorMsg").show();
+			return false;
+		}		
+		else if (type == 'sel'){
+			$(".sucessMsg").hide();
+			$(".errorMsg").text("*Selecione um valor para o tipo");
+			$(".errorMsg").show();
+			return false;
+		}
+		else if (description.length < 10 == true){
+			$(".sucessMsg").hide();
+			$(".errorMsg").text("*Descrição não pode conter menos de 10 caracteres");
 			$(".errorMsg").show();
 			return false;
 		}

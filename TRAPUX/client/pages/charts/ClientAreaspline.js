@@ -1,41 +1,60 @@
 Template.ClientAreaspline.topGenresChart = function() {
     return {
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: true
+            type: 'areaspline'
         },
         title: {
-            text: ''
-            //text: this.profile.firstName + "'s top genres"
+            text: 'Average fruit consumption during one week'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 150,
+            y: 100,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+        },
+        xAxis: {
+            categories: [
+                'Monday',
+                'Tuesday',
+                'Wednesday',
+                'Thursday',
+                'Friday',
+                'Saturday',
+                'Sunday'
+            ],
+            plotBands: [{ // visualize the weekend
+                from: 4.5,
+                to: 6.5,
+                color: 'rgba(68, 170, 213, .2)'
+            }]
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit units'
+            }
         },
         tooltip: {
-            pointFormat: '<b>{point.percentage:.1f}%</b>'
+            shared: true,
+            valueSuffix: ' units'
+        },
+        credits: {
+            enabled: false
         },
         plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    },
-                    connectorColor: 'blue'
-                }
+            areaspline: {
+                fillOpacity: 0.5
             }
         },
         series: [{
-            type: 'pie',
-            name: 'genre',
-            data: [
-                ['Adventure',   45.0],
-                ['Action',       26.8],
-                ['Ecchi',   12.8],
-                ['Comedy',    8.5],
-                ['Yuri',     6.2]
-            ]
-        }]
+            name: 'John',
+            data: [3, 4, 3, 5, 4, 10, 12]
+            }, {
+            name: 'Jane',
+            data: [1, 3, 4, 3, 3, 5, 4]
+    }]
     };
 };

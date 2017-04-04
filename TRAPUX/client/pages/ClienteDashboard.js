@@ -1,3 +1,6 @@
+Template.ClienteDashboard.onCreated(function () {
+});
+
 Template.ClienteDashboard.helpers({
 	//Cada usuário
 	users: function(){

@@ -1,8 +1,4 @@
 Uxorders = new Mongo.Collection('uxorders');
-//Copos.findOne({ name : "Ronaldo" });
-//Copos.find({}, {fields: {'name': 0}}).fetch()
-//Copos.find({}, {sort: {order: 1}}).fetch()
-//https://docs.meteor.com/api/collections.html
 
 // DANDO AUTORIZAÇÃO PARA MEXER COM O UXORDERS
 Uxorders.allow({

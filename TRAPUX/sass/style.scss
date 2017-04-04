@@ -435,7 +435,21 @@ form button:hover{
 }
 .rightBtn{
     float: right;
-    margin-top: -30px;
+    margin-top: -61px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    border: 0px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #2992d2;
 }
-#report{margin-right: 16px;}
-#evaluate{margin-right: 114px;}
+.rightBtn:hover{
+    color: white;
+    background-color: #19283f;
+    border-left: 10px solid #5584ff;
+}
+
+#report{margin-right: 179px;}
+#evaluate{margin-right: 15px;}

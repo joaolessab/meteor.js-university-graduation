@@ -1,4 +1,4 @@
-Template.ClientCategories.topGenresChart = function() {
+Template.ClientAreaspline.topGenresChart = function() {
     return {
         chart: {
             plotBackgroundColor: null,
@@ -6,7 +6,8 @@ Template.ClientCategories.topGenresChart = function() {
             plotShadow: true
         },
         title: {
-            text: this.profile.firstName + "'s top genres"
+            text: ''
+            //text: this.profile.firstName + "'s top genres"
         },
         tooltip: {
             pointFormat: '<b>{point.percentage:.1f}%</b>'

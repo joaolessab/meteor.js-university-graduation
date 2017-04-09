@@ -1,10 +1,10 @@
 <template name="MyDashboard">
     {{# if currentUser}}
-        
+
         {{#each users}}
         	
         	{{#if checkCliente profile.profession}}
-        		{{> ClienteDashboard}}
+                {{> FinalUserDashboard }}
         	
         	{{else}} {{#if checkGestor profile.profession}}
         		{{> GestorDashboard}}

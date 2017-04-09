@@ -272,10 +272,6 @@ form button, form input[type='submit']{
     width: 100% !important;
 }
 
-.app-layout{
-    width: 100%;
-    height: 100%;
-}
 #createPanel, #viewPanel{
     display: none;
 }
@@ -453,3 +449,42 @@ form button:hover{
 
 #report{margin-right: 179px;}
 #evaluate{margin-right: 15px;}
+
+/* -------------------------------------------------------------------- */
+.cover-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: green;    
+}
+
+.left-menu-bar{
+    float: left;
+    width: 200px;
+    background-color: blue;
+    height: 100%;
+}
+
+.whole-container{
+    float: left;
+    width: calc(100% - 200px);
+    background-color: red;
+    height: 100%;
+}
+.usable-nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: navy;
+}
+.mobile-bar{
+    height: 50px;
+    width: 100%;
+    background-color: pink;
+    display: none;
+}
+
+@media only screen 
+and (max-width: 650px){
+    .left-menu-bar{display: none;}
+    .mobile-bar{display: block;}
+}

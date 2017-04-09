@@ -16,9 +16,5 @@ Template.Header.events({
 	'click #mydashBtn': ()=> {
 		$(".topMenus").removeClass('actived');
 		$("#mydashBtn").addClass('actived');
-	},
-
-	'click #logoutBtn': () => {
-		AccountsTemplates.logout();
 	}
 });

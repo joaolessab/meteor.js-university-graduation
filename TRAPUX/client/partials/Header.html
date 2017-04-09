@@ -1,23 +1,18 @@
 <template name="Header">
     <header>
+    	
+
     	<div class="navHead">
-	        
-	        <button class="homeBtn" href="/">
-	        	<img alt="Trapux Logo" src="/resources/logotipo-symbol.png" width="50">
-	        	Trapux
-	        </button>
+	    	<button class="homeBtn" href="/">
+	     		<img alt="Trapux Logo" src="/resources/logotipo-symbol.png" width="50">
+	       		Trapux
+	    	</button>
 
-	    {{#if currentUser}}
-	        <a type="button" class="topMenus" id="logoutBtn">Sair</a>
+	    	<a class="topMenus" id="logonBtn">Fazer Logon</a>
+	    	<a type="button" class="topMenus" id="homeBtn" href="/">Início</a>
+		</div>
 
-	        <a class="topMenus" href="/mydash" id="mydashBtn">Meu Dashboard</a>
-	    {{else}}
-	        <a class="topMenus" id="logonBtn">Fazer Logon</a>
-	    {{/if}}
 
-	    <a type="button" class="topMenus" id="homeBtn" href="/">Início</a>
-
-    	</div>
     </header>    
     {{> LoginModal}}
 </template>
